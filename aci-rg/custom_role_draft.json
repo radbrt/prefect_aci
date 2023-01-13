@@ -1,0 +1,47 @@
+{
+  "properties": {
+      "roleName": "Prefect ACI Job creator",
+      "description": "Custom role for Prefect to create ACI ContainerGroups for workflow runs.",
+      "assignableScopes": [
+          "/subscriptions/<SUBSCRIPTION-ID>/resourceGroups/aci-rg"
+      ],
+      "permissions": [
+          {
+              "actions": [
+                  "Microsoft.ContainerInstance/containerGroups/read",
+                  "Microsoft.ContainerInstance/containerGroups/write",
+                  "Microsoft.ContainerInstance/containerGroups/delete",
+                  "Microsoft.ContainerInstance/containerGroups/restart/action",
+                  "Microsoft.ContainerInstance/containerGroups/stop/action",
+                  "Microsoft.ContainerInstance/containerGroups/refreshDelegatedResourceIdentity/action",
+                  "Microsoft.ContainerInstance/containerGroups/start/action",
+                  "Microsoft.ContainerInstance/containerGroups/containers/exec/action",
+                  "Microsoft.ContainerInstance/containerGroups/containers/attach/action",
+                  "Microsoft.ContainerInstance/containerGroups/containers/buildlogs/read",
+                  "Microsoft.ContainerInstance/containerGroups/containers/logs/read",
+                  "Microsoft.ContainerInstance/containerGroups/detectors/read",
+                  "Microsoft.ContainerInstance/containerGroups/outboundNetworkDependenciesEndpoints/read",
+                  "Microsoft.ContainerInstance/containerGroups/providers/Microsoft.Insights/diagnosticSettings/read",
+                  "Microsoft.ContainerInstance/containerGroups/providers/Microsoft.Insights/diagnosticSettings/write",
+                  "Microsoft.ContainerInstance/containerGroups/providers/Microsoft.Insights/metricDefinitions/read",
+                  "Microsoft.ContainerInstance/containerGroups/operationResults/read",
+                  "Microsoft.ContainerInstance/containerGroupProfiles/read",
+                  "Microsoft.ContainerInstance/containerGroupProfiles/write",
+                  "Microsoft.ContainerInstance/containerGroupProfiles/delete",
+                  "Microsoft.ContainerInstance/containerGroupProfiles/revisions/read",
+                  "Microsoft.ContainerInstance/containerGroupProfiles/revisions/deregister/action",
+                  "Microsoft.ContainerInstance/operations/read",
+                  "Microsoft.ContainerInstance/serviceassociationlinks/delete",
+                  "Microsoft.ContainerInstance/locations/validateDeleteVirtualNetworkOrSubnets/action",
+                  "Microsoft.ContainerInstance/locations/deleteVirtualNetworkOrSubnets/action",
+                  "Microsoft.ContainerInstance/locations/cachedImages/read",
+                  "Microsoft.ContainerInstance/locations/operationResults/read",
+                  "Microsoft.ContainerInstance/locations/operations/read"
+              ],
+              "notActions": [],
+              "dataActions": [],
+              "notDataActions": []
+          }
+      ]
+  }
+}
